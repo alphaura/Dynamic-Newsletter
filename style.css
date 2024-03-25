@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;               
+    font-size: 1.6rem;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+
+img {
+    width: 100%; 
+    display: block; 
+}
+
+/* Sign up form */
+
+.sign-up {
+    padding: 4rem 3rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.sign-up p {
+    padding-block: 2rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.listing img {
+    width: 2rem;
+    margin-right: 1.5rem;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+
+form .form-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+label, span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+span {
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+
+input {
+    font-size: 1.6rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid hsl(231, 7%, 60%);
+    font-weight: 400;
+}
+
+::placeholder {
+    color: hsl(231, 7%, 60%);
+}
+
+button {
+    margin-top: 2.5rem;
+    padding: 2rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+}
+
+
+/* 
+<div class="container">
+    <div class="sign-up">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="listing">
+            <div class="row1">
+                <img src="assets/images/icon-list.svg" alt="icon list">
+                <p>Product discovery and building what matters</p>
+            </div>
+            <div class="row2">
+                <img src="assets/images/icon-list.svg" alt="icon list">
+                <p>Product discovery and building what matters</p>
+            </div>
+            <div class="row3">
+                <img src="assets/images/icon-list.svg" alt="icon list">
+                <p>And much more!</p>
+            </div>
+        </div>
+        <form action="">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email">
+        </form>
+        <button id="submitForm">Subscribe to monthly newsletter</button>
+    </div>
+</div>
+
+*/

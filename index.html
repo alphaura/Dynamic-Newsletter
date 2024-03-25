@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Kyle Magri">
+    <meta name="description" content="Dynamic newsletter with sign up interaction">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+
+        <!-- Sign up form -->
+
+        <header>
+            <img src="assets/images/illustration-sign-up-mobile.svg" alt="Newsletter stats illustration">
+        </header>
+
+        <section class="sign-up-form">
+            <div class="container">
+                <div class="sign-up">
+                    <h1>Stay updated!</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    <div class="listing">
+                        <div class="row1">
+                            <img src="assets/images/icon-list.svg" alt="icon list">
+                            <p>Product discovery and building what matters</p>
+                        </div>
+                        <div class="row2">
+                            <img src="assets/images/icon-list.svg" alt="icon list">
+                            <p>Product discovery and building what matters</p>
+                        </div>
+                        <div class="row3">
+                            <img src="assets/images/icon-list.svg" alt="icon list">
+                            <p>And much more!</p>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-label">
+                            <label for="email">Email address</label>
+                            <span id="errorMsg">Valid email required</span>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="email@company.com">
+                    </form>
+                    <button id="submitForm">Subscribe to monthly newsletter</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thank you message -->
+
+
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>

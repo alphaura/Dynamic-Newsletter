@@ -27,18 +27,23 @@ img {
     display: block; 
 }
 
+.desktop {
+    display: none;
+}
+
+
 /* Sign up form */
 
 .sign-up {
     padding: 4rem 3rem;
 }
 
-h1 {
+h1, h2 {
     font-size: 4.5rem;
     color: hsl(234, 29%, 20%);
 }
 
-.sign-up p {
+.sign-up p, .thankyou p {
     padding-block: 2rem;
     color: hsl(234, 29%, 20%);
 }
@@ -86,7 +91,7 @@ input {
     color: hsl(231, 7%, 60%);
 }
 
-button {
+.submitForm, .close {
     margin-top: 2.5rem;
     padding: 2rem 0;
     width: 100%;
@@ -96,6 +101,11 @@ button {
     border: none;
     background-color: hsl(234, 29%, 20%);
     color: white;
+}
+
+.submitForm:hover, .close:hover {
+    background: linear-gradient(to right, #ff5868, #ff6548);
+    cursor: pointer;
 }
 
 
@@ -127,3 +137,119 @@ button {
 </div>
 
 */
+
+/* Thank you message */
+
+.thankyou-content {
+    display: none;
+}
+
+.thankyou {
+    padding: 2.5rem;
+    height: 100dvh;
+    height: 100vh;
+}
+
+.thankyou p {
+    line-height: 2.5rem;
+    max-width: 50rem;
+}
+
+.hero-thankyou {
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3rem ;
+}
+
+.hero-thankyou img {
+    max-width: 6rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 
+
+<section class="thankyou">
+    <div class="hero-thankyou">
+        <img src="assets/images/icon-success.svg" alt="Very good icon">
+    </div>
+
+    <h2>Thanks for subscribing!</h2>
+
+    <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription</p>
+
+    <button id="close" class="close">Dismiss Message</button>
+</section>
+
+*/
+
+@media ( min-width: 768px ) {
+
+    main {
+        background-color: hsl(235, 18%, 26%);
+        height: 100dvh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Sign up form */
+
+    
+    .container-sign-up {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: hsl(0, 0%, 100%);
+        justify-content: center;
+        align-items: center;
+        max-width: 80rem;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .listing p {
+        padding-block: 0.6rem;
+    }
+
+    /* Thank you message */
+
+    .flex {
+        display: block;
+    }
+
+    .container-thankyou {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 2rem;
+    }
+
+    .hero-thankyou {
+        height: 8rem;
+    }
+
+    .thankyou {
+        height: 50rem;
+        max-width: 41rem;
+        padding-inline: 6rem;
+    }
+
+    .thankyou p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+}
+

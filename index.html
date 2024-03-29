@@ -19,42 +19,61 @@
 
         <!-- Sign up form -->
 
-        <header>
-            <img src="assets/images/illustration-sign-up-mobile.svg" alt="Newsletter stats illustration">
-        </header>
+        <div class="sign-up-content">
 
-        <section class="sign-up-form">
-            <div class="container">
-                <div class="sign-up">
-                    <h1>Stay updated!</h1>
-                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                    <div class="listing">
-                        <div class="row1">
-                            <img src="assets/images/icon-list.svg" alt="icon list">
-                            <p>Product discovery and building what matters</p>
-                        </div>
-                        <div class="row2">
-                            <img src="assets/images/icon-list.svg" alt="icon list">
-                            <p>Product discovery and building what matters</p>
-                        </div>
-                        <div class="row3">
-                            <img src="assets/images/icon-list.svg" alt="icon list">
-                            <p>And much more!</p>
+            <div class="container-sign-up">
+                <div class="hero-sign-up">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="Newsletter stats illustration" class="mobile">
+                    <img src="assets/images/illustration-sign-up-desktop.svg" alt="Newsletter stats illustration" class="desktop">
+                </div>
+                <section class="sign-up-form">
+                    <div class="container">
+                        <div class="sign-up">
+                            <h1>Stay updated!</h1>
+                            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                            <div class="listing">
+                                <div class="row1">
+                                    <img src="assets/images/icon-list.svg" alt="icon list">
+                                    <p>Product discovery and building what matters</p>
+                                </div>
+                                <div class="row2">
+                                    <img src="assets/images/icon-list.svg" alt="icon list">
+                                    <p>Product discovery and building what matters</p>
+                                </div>
+                                <div class="row3">
+                                    <img src="assets/images/icon-list.svg" alt="icon list">
+                                    <p>And much more!</p>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="form-label">
+                                    <label for="email">Email address</label>
+                                    <span id="errorMsg">Valid email required</span>
+                                </div>
+                                <input type="email" id="email" name="email" placeholder="email@company.com">
+                            </form>
+                            <button id="submitForm" class="submitForm">Subscribe to monthly newsletter</button>
                         </div>
                     </div>
-                    <form>
-                        <div class="form-label">
-                            <label for="email">Email address</label>
-                            <span id="errorMsg">Valid email required</span>
-                        </div>
-                        <input type="email" id="email" name="email" placeholder="email@company.com">
-                    </form>
-                    <button id="submitForm">Subscribe to monthly newsletter</button>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
 
         <!-- Thank you message -->
+
+        <div class="container-thankyou thankyou-content">
+            <section class="thankyou flex">
+                <div class="container">
+                    <div class="hero-thankyou">
+                        <img src="assets/images/icon-success.svg" alt="Very good icon">
+                    </div>
+                    <h2>Thanks for subscribing!</h2>
+                    <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription</p>
+                </div>
+                <button id="close" class="close">Dismiss Message</button>
+            </section>
+        </div>
+
 
 
     </main>

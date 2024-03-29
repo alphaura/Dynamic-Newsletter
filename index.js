@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitButton = document.getElementById('submitForm');
     const emailInput = document.getElementById('email');
     const errorMsg = document.getElementById('errorMsg');
+    const signUpContent = document.querySelector('.sign-up-content');
+    const thankYouContent = document.querySelector('.container-thankyou');
 
     submitButton.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent the default button click behavior
@@ -20,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
             emailInput.style.backgroundColor = '';
             emailInput.placeholder = 'email@company.com';
             errorMsg.style.display = 'none';
+
+            // Hide sign-up content and show thank you content
+            signUpContent.style.display = 'none';
+            thankYouContent.style.display = 'block';
         }
     });
 
@@ -28,4 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
+
+    // Close button functionality
+    const closeButton = document.getElementById('close');
+    closeButton.addEventListener('click', function() {
+        // Hide thank you content and show sign-up content
+        signUpContent.style.display = 'block'; // Change to flex for desktop
+        thankYouContent.style.display = 'none';
+    });
 });

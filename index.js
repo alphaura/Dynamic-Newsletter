@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButton = document.getElementById('close');
     closeButton.addEventListener('click', function() {
         // Hide thank you content and show sign-up content
-        signUpContent.style.display = 'block'; // Change to flex for desktop
+        signUpContent.style.display = 'block';
         thankYouContent.style.display = 'none';
     });
 });
